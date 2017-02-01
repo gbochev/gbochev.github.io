@@ -37,7 +37,7 @@ function Level01 () {
        this.scene.add(cubes[i][j]);
      }
      if(cubemap[i][j] === -1) {
-       cubes[i][j]= new THREE.Mesh(geometry, resources.materials[2]);
+       cubes[i][j]= new THREE.Mesh(geometry, resources.materials[1]);
        cubes[i][j].position.x = j * 10;
        cubes[i][j].position.z = i * 10;
        cubes[i][j].door = 1;
