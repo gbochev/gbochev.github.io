@@ -3,6 +3,7 @@ function Player (x,z) {
   this.camera = new THREE.PerspectiveCamera( 75, 1000 / 600, 0.1, 1000 );
   this.camera.position.x = x; //start coordinates
   this.camera.position.z = z;
+  this.camera.position.y = 0;
   var speed = 0;
   var rotation = 0;
   var fw = false;
@@ -65,6 +66,8 @@ function Player (x,z) {
     return false;
   };
   this.move = function (scene) {
+    document.getElementById("coords").innerHTML = "X: " + Math.floor(this.camera.position.x) +
+    " Y: " + Math.floor(this.camera.position.z);
     if(this.collision(-1, scene)) {
       fw = false;
     }
@@ -83,6 +86,5 @@ function Player (x,z) {
     if(rot < 0)
       rotation -= rotationSpeed;
     this.camera.rotation.y = rotation * 180 / Math.PI;
-    this.camera.position.y = 0;
   };
 }

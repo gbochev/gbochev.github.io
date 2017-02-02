@@ -4,7 +4,7 @@
         <title>3D</title>
         <style>
             body {
-              background-color: #bbb;
+              background-color: #777;
             }
             canvas {
                 padding: 0;
@@ -12,9 +12,23 @@
                 display: block;
                 width: 800px;
             }
+            #info {
+              position: absolute;
+              color: black;
+              font-family: fantasy;
+              width: 100px;
+            }
         </style>
     </head>
     <body oncontextmenu="return false;">
+        <div id="webgl">
+          <div id="info">
+          <p id="level">Level 0</p>
+          <p id="coords"></p>
+          <p id="time"></p>
+          <p>Use arrow keys to move and look around. Don't get lost!</p>
+          </div>
+        </div>
         <script src="js/three.min.js"></script>
         <script src="js/levels/resource.js"></script>
         <script src="js/levels/level01.js"></script>

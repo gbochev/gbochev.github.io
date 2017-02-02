@@ -1,9 +1,10 @@
 // maps
 "use strict";
+var container = document.getElementById("webgl");
 var renderer = new THREE.WebGLRenderer();
 renderer.setClearColor( 0x444444);
 renderer.setSize( 1000, 600 );
-document.body.appendChild( renderer.domElement );
+container.appendChild( renderer.domElement );
 
 var levels = new levelLoader();
 levels.init();

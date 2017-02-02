@@ -1,35 +1,34 @@
 "use strict";
-function Level02 () {
+function Level01 () {
   this.scene = new THREE.Scene();
   this.scene.fog = new THREE.Fog(0x111111, 0.015, 80);
   var resources = new resourceLoader();
   var cubesize = 10;
-  var geometry = new THREE.CubeGeometry(cubesize,16,cubesize);
+  var geometry = new THREE.CubeGeometry(cubesize, 16, cubesize);
   this.loadMap = function () {
     //load map's geometry
     // 0 to n-1 materials
     // -1 doors
     //n floors
     var cubemap=[
-        [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-        [1,0,1,0,0,0,1,0,0,0,0,0,0,0,1],
-        [1,0,1,0,1,0,1,0,0,0,0,0,0,0,1],
-        [1,0,1,0,1,0,0,0,0,0,0,0,0,0,1],
-        [1,0,1,0,1,1,1,1,0,0,0,0,0,0,1],
-        [1,0,0,0,1,0,0,0,1,0,0,0,0,0,1],
-        [1,1,1,1,1,0,0,0,1,1,1,0,0,0,1],
-        [1,0,0,0,0,0,0,0,1,0,0,0,0,0,1],
-        [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-        [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-        [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-        [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+        [1,1,1,1,1,-1,1,1,1,1,1,1],
+        [1,0,0,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,1,0,0,1],
+        [1,1,1,0,0,0,0,1,1,0,0,1],
+        [1,0,1,0,0,1,0,0,0,0,0,1],
+        [1,0,1,0,0,1,0,0,1,0,0,1],
+        [1,0,1,0,0,1,0,0,1,1,1,1],
+        [1,0,0,0,0,1,0,0,1,0,0,1],
+        [1,0,0,1,0,0,1,0,1,0,0,1],
+        [1,0,0,1,0,0,1,1,1,0,0,1],
+        [1,0,0,1,0,0,0,0,0,0,0,1],
+        [1,1,1,1,1,1,1,1,1,1,1,1]
         ];
     var cubes=new Array(cubemap.length);
     for(var i=0;i<cubemap.length;i++)
       cubes[i]=new Array(cubemap[0].length);
     for(var j=0;j<cubemap[0].length;j++)
     for(var i=0;i<cubemap.length;i++){
-      //walls
       if(cubemap[i][j] > 0) {
        cubes[i][j]= new THREE.Mesh(geometry, resources.materials[cubemap[i][j]-1]);
        cubes[i][j].position.x = j * 10;
@@ -37,9 +36,8 @@ function Level02 () {
        cubes[i][j].door = 0;
        this.scene.add(cubes[i][j]);
      }
-     //door for the next level
      if(cubemap[i][j] === -1) {
-       cubes[i][j]= new THREE.Mesh(geometry, resources.materials[2]);
+       cubes[i][j]= new THREE.Mesh(geometry, resources.materials[1]);
        cubes[i][j].position.x = j * 10;
        cubes[i][j].position.z = i * 10;
        cubes[i][j].door = 1;
@@ -49,7 +47,7 @@ function Level02 () {
     //load map's floor
     var meshFloor = new THREE.Mesh(
       new THREE.PlaneGeometry(cubesize*cubemap[0].length, cubesize*cubemap.length),
-      resources.materials[4]
+      resources.materials[2]
     );
     meshFloor.position.y = - cubesize/2;
     meshFloor.position.x = cubesize * cubemap[0].length/2;
