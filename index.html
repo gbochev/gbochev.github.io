@@ -14,7 +14,20 @@ $(document).ready(function(){
   $("#page1").backstretch("back1.jpg");
   //$("#newsfeed").backstretch(["nf1.png","nf2.png"],{duration: 3000, fade: 750});
 });
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
 
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
 </script>
 <style type="text/css">
   body{
@@ -62,6 +75,11 @@ $(document).ready(function(){
     color: #4d92ff;
     margin-right: 20px;
   }
+  .btn-default {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ccc;
+  }
 </style>
 <body>
   <div id="page1">
@@ -70,6 +88,7 @@ $(document).ready(function(){
         <center>
             <h1>GEORGE BOCHEV</h1>
             <p>PROGRAMMER, ELECTRICIAN AND HOBBYIST</p>
+	    <a href="#page2" type="button" class="btn btn-default btn-lg">PROJECTS</a>
         </center>
         <div style="height:250px;"></div>
       </div>
@@ -83,6 +102,7 @@ $(document).ready(function(){
 
 	<hr>
       <h5>PC</h5>
+	<a href="http://clearnet.weebly.com/"><h2>ClearNet - clean version of the internet</h2></a>
 	<a href="https://github.com/gbochev/OS"><h2>Simple OS for educational purposes</h2></a>
 	<a href="https://github.com/gbochev/brainfuck"><h2>Brainfuck interpreter</h2></a>
 	<hr>
