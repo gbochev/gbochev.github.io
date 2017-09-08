@@ -13,26 +13,11 @@
 $(document).ready(function(){
   $("#page1").backstretch("back1.jpg");
   //$("#newsfeed").backstretch(["nf1.png","nf2.png"],{duration: 3000, fade: 750});
-});
-//smooth scroll
-$("a[href^='#']").on('click', function(e) {
-
-   // prevent default anchor click behavior
-   e.preventDefault();
-
-   // store hash
-   var hash = this.hash;
-
-   // animate
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 300, function(){
-
-       // when done, add hash to url
-       // (default click behaviour)
-       window.location.hash = hash;
-     });
-
+  $("#projects").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#page2").offset().top
+    }, 2000);
+  });
 });
 </script>
 <style type="text/css">
@@ -94,7 +79,7 @@ $("a[href^='#']").on('click', function(e) {
         <center>
             <h1>GEORGE BOCHEV</h1>
             <p>PROGRAMMER, ELECTRICIAN AND HOBBYIST</p>
-	    <a href="#page2" type="button" class="btn btn-default btn-lg">PROJECTS</a>
+	    <button id="projects" type="button" class="btn btn-default btn-lg">PROJECTS</button>
         </center>
         <div style="height:250px;"></div>
       </div>
