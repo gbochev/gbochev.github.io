@@ -1,140 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>George Bochev - freelance programmer and electrician</title>
-  <meta charset="utf-8">
-  <meta name="description" content="Personal webpage of George Bochev - freelance programmer, electrician and hobbyist.
-	Here you will find my projects 3D games, software and my blog.">
-  <meta name="keyword" content="George Bochev, Георги Бочев, ClearNet, freelance, programmer, work, electrician, experiments, c#, python,
-	js, html, фрийланс, програмист, работа, електричар, хоби, Q4 CPU, homemade cpu, самоделен процесор, гайгеров брояч">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="backstretch.js"></script>
-</head>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#page1").backstretch("back1.jpg");
-  //$("#newsfeed").backstretch(["nf1.png","nf2.png"],{duration: 3000, fade: 750});
-  $("#projects").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#page2").offset().top
-    }, 800);
-  });
-});
-</script>
-<style type="text/css">
-  body{
-    background-color: #eee;
-  }
-  #page3{
-    background-color: #111;
-  }
-  a{
-    text-decoration: none;
-  }
-  a:hover{
-    text-decoration: none;
-  }
-  p{
-    color: #FFF;
-    font-size: 14pt;
-    text-shadow: 1px 1px 1px #000;
-  }
-  h1{
-    color: #FFF;
-    font-size: 60pt;
-    text-shadow: 2px 2px 3px #000;
-  }
-  h2{
-    color: black;
-    font-size: 20pt;
-    text-shadow: 1px 1px 1px #000;
-  }
-  h3{
-    color: silver;
-  }
-  th{
-    width: 320px;
-  }
-  .link
-  {
-    color: black;
-  }
-  .link:hover
-  {
-    color: silver;
-  }
-  .bio {
-    color: #4d92ff;
-    margin-right: 20px;
-  }
-  .btn-default {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: #ccc;
-  }
-</style>
-<body>
-  <div id="page1">
-	    <div class="container">
-        <div style="height:250px;"></div>
-        <center>
-            <h1>GEORGE BOCHEV</h1>
-            <p>PROGRAMMER, ELECTRICIAN AND HOBBYIST</p>
-	    <button id="projects" type="button" class="btn btn-default btn-lg">PROJECTS</button>
-        </center>
-        <div style="height:250px;"></div>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+      <title>Georgi Bochev - freelance programmer and electrician - websites and software | Георги Бочев - фрийланс програмист и електроинженер - сайтове и софтуер по поръчка</title>
+
+      <meta name="description" content="Personal webpage of Georgi Bochev - freelance programmer, electrician and hobbyist.
+         Here you will find my projects 3D games, software and my blog and contacts. Лична страница на Георги Бочев - фрийланс програмист и електроинженер.
+         Тук ще намерите моите проекти, 3Д игри, софтуер и моят блог както и контакти за връзка с мен.">
+
+      <meta name="keyword" content="Georgi Bochev, Георги Бочев, фрийланс, фрийлансър, фрийленсър, услуги, програмист, работа, софтуер, сайтове, сайт, уебсайт, поръчка, ClearNet, freelance, programmer, work, electrician, experiments, c#, python,
+         js, html, електричар, хоби, Q4 CPU, homemade cpu, самоделен процесор, гайгеров брояч">
+      
+      <meta name="author" content="Georgi Bochev Георги Бочев">
+
+      <meta name="robots" content="index, follow" />
+
+      <meta name="revisit-after" content="5 days" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script src="backstretch.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+            $("#page1").backstretch("back.jpg");
+            //$("#newsfeed").backstretch(["nf1.png","nf2.png"],{duration: 3000, fade: 750});
+            $("#projects").click(function() {
+              $('html, body').animate({
+                  scrollTop: $("#page2").offset().top
+              }, 800);
+            });
+            $("#contacts").click(function() {
+              $('html, body').animate({
+                  scrollTop: $("#page3").offset().top
+              }, 800);
+            });
+            $('#page1').css("height", $(window).height());
+          });
+      </script>
+      <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#" style="font-family: Vegan; font-size: 30px;">GEORGI BOCHEV</a>
+            </div>
+            <ul class="nav navbar-nav" align="right" style="font-family: Roma; font-size: 16px;">
+               <li><a id="projects" href="#projects">Projects</a></li>
+               <li><a href="blog/index.html">Blog</a></li>
+               <li><a id="contacts" href="#contacts">Contacts</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div id="page1" style="min-height: 500px;">
+         <div class="container">
+            <div class="Iam">
+               <p id="stat">I am</p>
+               <b>
+                  <div class="innerIam">
+                     Georgi<br/> 
+                     a programmer<br />
+                     a freelancer<br />
+                     an electrician<br />
+                     a businessman
+                  </div>
+               </b>
+            </div>
+         </div>
       </div>
-  </div>
-  <br>
-  <div id="page2">
-    <div class="container">
-      <h5>WEB</h5>
-        <a href="3d/index.html"><h2>3D labyrinth game</h2></a>
-	<a href="http://newsfeed.free.bg"><h2>Newsfeed(RSS site reader)</h2></a>
-	<hr>
-      <h5>PC</h5>
-	<a href="http://clearnet.weebly.com/"><h2>ClearNet - clean version of the internet</h2></a>
-	<a href="https://github.com/gbochev/OS"><h2>Simple OS for educational purposes</h2></a>
-	<a href="https://github.com/gbochev/brainfuck"><h2>BF language interpreter</h2></a>
-	<hr>
-      <h5>ELECTRONICS</h5>
-	<a href="http://imgur.com/JOjML8S.jpg"><h2>Regenerative receiver</h2></a>
-	<a href="http://imgur.com/IEsx8n1,Re0Nkmp"><h2>Geiger counter PSU</h2></a>
-        <a href="https://www.youtube.com/watch?v=HIbD_xIYTYc"><h2>Geiger counter with STS-5</h2></a>
-	<a href="https://www.youtube.com/watch?v=Dwg0XrDSlVU"><h2>Plasma speaker</h2></a>
-	<a href="https://www.youtube.com/watch?v=YQQhqEFT_lA"><h2>Tesla coil</h2></a>
-	<a href="https://www.youtube.com/watch?v=Koi68j4Vsr0"><h2>PONG TV game</h2></a>
-	<a href="https://www.youtube.com/watch?v=RZ-OR-zcUJc"><h2>Q4 CPU - logisim simulation</h2></a>
-	<hr>
-    </div>
-  </div>
-  <br>
-  <div id="page3">
-  <div class="container">
-	
-    <h3>BIO </h3>
-        <h5 class="bio">
-          Hi,<br>
-           My name is George and I am a student in Nikola Vaptsarov Naval Academy, studying electromechanical engineering.
-            I have studied programming in Highschool and worked as a C# developer for short time. I like programming and electronics.
-             I know HTML, CSS, JS, Python and C very well. I am freelancer and I make software and websites. If you want to work with
-		me feel free to contact me.
-		<br>
-		Здравейте,<br>
-		Казвам се Георги и в момента съм студент във ВВМУ специалност електрообзавеждане на кораба. Учил съм информатика в
-		гимназията и съм работил като C# програмист. Обичам да се занимавам с програмиране и електроника. Знам доста добре
-		HMTL, CSS, JS, Python и C. В момента съм фрийлансър - изработвам софтуер и сайтове по поръчка. Ако искате да работим
-		заедно ми пишете на имейл: gbochev96@gmail.com или ме добавете в скайп: george.bochev
-        </h5>
-	<h3>Contacts </h3>
-          <h5 class="bio"><a href="mailto:gbochev96@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Email</a></h5>
-          <h5 class="bio"><a href="https://georglab.wordpress.com/"><span class="glyphicon glyphicon-pencil"></span> Blog</a></h5>
-  <br>
-  <center><h6>Copyright &copy George Bochev (2017)</h6></center>
-  </div>
-</div>
-</body>
+      <p></p>
+      <div id="page2">
+         <div class="container">
+            <h5>WEB</h5>
+            <table style="width:100%">
+               <tr>
+                  <td>
+                     <a href="3d/index.html">
+                     <img src="3dlab.png" class="img-rounded" alt="3D labyrinth website game 3Д игра" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="3d/index.html"><span style="color:#000000;">3D labyrinth game</span></a></h2>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <a href="old/index.html">
+                     <img src="old_page.png" class="img-rounded" alt="My old webpage Старата ми страница" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="old/index.html"><span style="color:#000000;">My old webpage</span></a></h2>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <a href="http://newsfeed.free.bg">
+                     <img src="nfeed.png" class="img-rounded" alt="Newsfeed уебсайт за новини RSS четец" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="http://newsfeed.free.bg"><span style="color:#000000;">Newsfeed(RSS site reader)</span></a></h2>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <a href="http://www.bigboyauto.com/">
+                     <img src="bigboy.png" class="img-rounded" alt="BigBoy Auto фирмен уебсайт по поръчка" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="http://www.bigboyauto.com/"><span style="color:#000000;">BigBoy Auto - company website</span></a></h2>
+                  </td>
+               </tr>
+
+            </table>
+            <hr/>
+            <h5>PC</h5>
+            <table style="width:100%">
+               <tr>
+                  <td>
+                     <a href="http://clearnet.weebly.com/">
+                     <img src="clear.png" class="img-rounded" alt="Clearnet софтуер за предпазване от вируси" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="http://clearnet.weebly.com/"><span style="color:#000000;">ClearNet - clean version of the internet</span></a></h2>
+                  </td>
+               </tr>
+            </table>
+            <h5>ELECTRONICS</h5>
+            <table style="width:100%">
+               <tr>
+                  <td>
+                     <a href="https://www.youtube.com/watch?v=HIbD_xIYTYc">
+                     <img src="gcounter.png" class="img-rounded" alt="Geiger Counter гайгеров брояч" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="https://www.youtube.com/watch?v=HIbD_xIYTYc"><span style="color:#000000;">Geiger counter with STS-5</span></a></h2>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <a href="https://www.youtube.com/watch?v=Dwg0XrDSlVU">
+                     <img src="pspeaker.png" class="img-rounded" alt="Plasma Speaker плазмен говорител" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="https://www.youtube.com/watch?v=Dwg0XrDSlVU"><span style="color:#000000;">Plasma speaker</span></a></h2>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <a href="https://www.youtube.com/watch?v=YQQhqEFT_lA">
+                     <img id="picture" src="tcoil.jpg" class="img-rounded" alt="Tesla Coil Бобина на Тесла" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="https://www.youtube.com/watch?v=YQQhqEFT_lA"><span style="color:#000000;">Tesla coil</span></a></h2>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <a href="https://www.youtube.com/watch?v=Koi68j4Vsr0">
+                     <img src="pong.png" class="img-rounded" alt="Pong TV game Понг игра за телевизор" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="https://www.youtube.com/watch?v=Koi68j4Vsr0"><span style="color:#000000;">PONG TV game</span></a></h2>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <a href="https://www.youtube.com/watch?v=RZ-OR-zcUJc">
+                     <img src="cpu.png" class="img-rounded" alt="Q4 CPU Model Модел на 4 битов процесор" height="200" width="300"></a>
+                  </td>
+                  <td>
+                     <h2><a href="https://www.youtube.com/watch?v=RZ-OR-zcUJc"><span style="color:#000000;">Q4 CPU - logisim simulation</span></a></h2>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="page3">
+         <div class="container">
+            <h3>BIO</h3>
+            <h5 class="bio"><span style="font-size:16px;">Hi,<br>
+               My name is Georgi and I am a student in Nikola Vaptsarov Naval Academy, studying electromechanical engineering. In this webpage I have collected my projects. I have studied programming in Highschool and worked as a C# developer for short time. I like programming and electronics. I know HTML, CSS, JS, Python and C very well. I am freelancer and I make software and websites. If you want to work with me feel free to contact me via email: gbochev96@gmail.com or via skype: george.bochev.
+               <br><br>
+               Здравейте,<br> Казвам се Георги и в момента съм студент във ВВМУ специалност електрообзавеждане на кораба. Учил съм информатика в гимназията и съм работил като C# програмист. Обичам да се занимавам с програмиране и електроника. Знам доста добре HMTL, CSS, JS, Python и C. В момента съм фрийлансър - изработвам софтуер и сайтове по поръчка. Ако искате да работим заедно ми пишете на имейл: gbochev96@gmail.com или ме добавете в скайп: george.bochev
+            </span>
+            </h5>
+            <h3>Contacts</h3>
+            <h5 class="bio"><span style="font-size:16px;"><a href="mailto:gbochev96@gmail.com"><span class="glyphicon glyphicon-envelope"></span> gbochev96@gmail.com</a></span></h5>
+            <center>
+               <h6>Copyright &copy; Georgi Bochev (2019)</h6>
+               <div style="height:50px;"></div>
+            </center>
+         </div>
+      </div>
+   </body>
 </html>

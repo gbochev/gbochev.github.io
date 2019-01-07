@@ -1,0 +1,174 @@
+body{
+         background-color: #eee;
+         font-family: Nunito;
+         min-width:700px;
+         }
+         #page3{
+         background-color: #111;
+         }
+         a{
+         text-decoration: none;
+         }
+         a:hover{
+         text-decoration: none;
+         }
+         h1{
+         color: #4d92ff;
+         font-size: 28pt;
+         font-family: Nunito;
+         text-shadow: 2px 2px 3px #000;
+         max-width: 500px;
+         }
+         h2{
+         color: black;
+         font-size: 20pt;
+         }
+         h3{
+         color: silver;
+         }
+         th{
+         width: 320px;
+         }
+         .link
+         {
+         color: black;
+         }
+         .link:hover
+         {
+         color: silver;
+         }
+         .bio {
+         color: #4d92ff;
+         margin-right: 20px;
+         font-family: 'PT Sans', sans-serif;
+         }
+         .btn-default {
+         color: #fff;
+         background-color: rgba(255, 255, 255, 0.1);
+         border-color: #ccc;
+         }
+         .navbar-brand{
+         color: #FFF;
+         font-size: 20pt;
+         text-shadow: 2px 2px 3px #000;
+         }
+         .navbar-nav{
+         float: right;
+         }
+         .navbar-inverse {
+         background-color: #151515f5;
+         }
+         @font-face {
+         font-family: Pooch;
+         src: url(fonts/PoochDoo.otf);
+         }
+         @font-face {
+         font-family: Fancy;
+         src: url(fonts/Fancy.ttf);
+         }
+         @font-face {
+         font-family: Vegan;
+         src: url(fonts/Vegan.otf);
+         }
+         @font-face {
+         font-family: NightMachine;
+         src: url(fonts/NightMachine.otf);
+         }
+         @font-face {
+         font-family: Oilrig;
+         src: url(fonts/Oilrig.otf);
+         }
+         @font-face {
+         font-family: Xide;
+         src: url(fonts/Xide.otf);
+         }
+         @font-face {
+         font-family: Roma;
+         src: url(fonts/Roma.ttf);
+         }
+         .Iam {
+         padding: 2em 5em;
+         font: normal 40px/50px Montserrat, sans-serif;
+         color: #999;
+         min-width: 800px;
+         margin-left:-160px;
+         margin-top:25%;
+         }
+         .Iam b {
+         float: left;
+         overflow: hidden;
+         position: relative;
+         height: 50px;
+         top: 0px;
+         }
+         .Iam .innerIam {
+         display: inline-block;
+         color: #4d92ff;
+         position: relative;
+         white-space: nowrap;
+         top: 0;
+         left: 0;
+         /*animation*/
+         -webkit-animation:move 10s;
+         -moz-animation:move 10s;
+         -ms-animation:move 10s;
+         -o-animation:move 10s;
+         animation:move 10s;
+         /*animation-iteration-count*/
+         -webkit-animation-iteration-count:infinite;
+         -moz-animation-iteration-count:infinite;
+         -ms-animation-iteration-count:infinite;
+         -o-animation-iteration-count:infinite;
+         animation-iteration-count:infinite;
+         /*animation-delay*/
+         -webkit-animation-delay:2s;
+         -moz-animation-delay:2s;
+         -ms-animation-delay:2s;
+         -o-animation-delay:2s;
+         animation-delay:2s;
+         }
+         @keyframes move{
+         0%  { top: 0px; }
+         20% { top: -50px; }
+         40% { top: -100px; }
+         60% { top: -150px; }
+         80% { top: -200px; }
+         }
+         @-webkit-keyframes move {
+         0%  { top: 0px; }
+         20% { top: -50px; }
+         40% { top: -100px; }
+         60% { top: -150px; }
+         80% { top: -200px; }
+         }
+         @-moz-keyframes move {
+         0%  { top: 0px; }
+         20% { top: -50px; }
+         40% { top: -100px; }
+         60% { top: -150px; }
+         80% { top: -200px; }
+         }
+         @-o-keyframes move {
+         0%  { top: 0px; }
+         20% { top: -50px; }
+         40% { top: -100px; }
+         60% { top: -150px; }
+         80% { top: -200px; }
+         }
+         @keyframes move {
+         0%  { top: 0px; }
+         20% { top: -50px; }
+         40% { top: -100px; }
+         60% { top: -150px; }
+         80% { top: -200px; }
+         }
+         #stat {
+         height: 25px;
+         float: left;
+         margin: 0em 0.3em 0em 0em;
+         color: white;
+         font-family:Nunito;
+         }
+         th, td {
+         padding: 40px;
+         }
