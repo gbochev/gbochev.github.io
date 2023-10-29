@@ -91,7 +91,7 @@ function levelLoader() {
     this.level = new Level01();
     this.level.init();
     //x,y from the top left corner
-    this.player = new Player(100,70);
+    this.player = new Player(100,80);
     document.addEventListener('keydown', this.player.keydown);
     document.addEventListener('keyup', this.player.keyup);
   };
